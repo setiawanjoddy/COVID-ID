@@ -13,6 +13,8 @@
 		5A03E2A42631D20F0023F3D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A03E2A22631D20F0023F3D6 /* Main.storyboard */; };
 		5A03E2A62631D2110023F3D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A03E2A52631D2110023F3D6 /* Assets.xcassets */; };
 		5A03E2A92631D2110023F3D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A03E2A72631D2110023F3D6 /* LaunchScreen.storyboard */; };
+		5A3383D32631E329000F2C08 /* CovidData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3383D22631E329000F2C08 /* CovidData.swift */; };
+		5A3383D62631E365000F2C08 /* CovidManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3383D52631E365000F2C08 /* CovidManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		5A03E2A52631D2110023F3D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A03E2A82631D2110023F3D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A03E2AA2631D2110023F3D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A3383D22631E329000F2C08 /* CovidData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidData.swift; sourceTree = "<group>"; };
+		5A3383D52631E365000F2C08 /* CovidManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,39 @@
 			children = (
 				5A03E29C2631D20F0023F3D6 /* AppDelegate.swift */,
 				5A03E29E2631D20F0023F3D6 /* SceneDelegate.swift */,
-				5A03E2A02631D20F0023F3D6 /* ViewController.swift */,
-				5A03E2A22631D20F0023F3D6 /* Main.storyboard */,
+				5A03E2B12631D58A0023F3D6 /* Model */,
+				5A03E2B22631D5A20023F3D6 /* View */,
+				5A03E2B32631D5C50023F3D6 /* Controller */,
 				5A03E2A52631D2110023F3D6 /* Assets.xcassets */,
 				5A03E2A72631D2110023F3D6 /* LaunchScreen.storyboard */,
 				5A03E2AA2631D2110023F3D6 /* Info.plist */,
 			);
 			path = CovID;
+			sourceTree = "<group>";
+		};
+		5A03E2B12631D58A0023F3D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5A3383D52631E365000F2C08 /* CovidManager.swift */,
+				5A3383D22631E329000F2C08 /* CovidData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5A03E2B22631D5A20023F3D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5A03E2A22631D20F0023F3D6 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5A03E2B32631D5C50023F3D6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5A03E2A02631D20F0023F3D6 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +168,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A03E2A12631D20F0023F3D6 /* ViewController.swift in Sources */,
+				5A3383D62631E365000F2C08 /* CovidManager.swift in Sources */,
+				5A3383D32631E329000F2C08 /* CovidData.swift in Sources */,
 				5A03E29D2631D20F0023F3D6 /* AppDelegate.swift in Sources */,
 				5A03E29F2631D20F0023F3D6 /* SceneDelegate.swift in Sources */,
 			);
